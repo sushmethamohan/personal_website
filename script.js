@@ -1,0 +1,132 @@
+// Run locally: python3 -m http.server 8000  →  open http://localhost:8000
+
+marked.use({ gfm: true, breaks: true });
+
+const ROUTES = {
+  about:        'content/about.md',
+  research:     'content/research.md',
+  publications: 'content/publications.md',
+  cv:           'content/cv.md',
+  contact:      'content/contact.md',
+};
+
+function setActiveBlogNav() {
+  document.querySelectorAll('.nav-link').forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#blog');
+  });
+}
+
+async function loadBlogList() {
+  setActiveBlogNav();
+  const main = document.getElementById('main');
+  try {
+    const res = await fetch('content/blog/index.json');
+    if (!res.ok) throw new Error(res.statusText);
+    const data = await res.json();
+    const postsHTML = data.posts.map(p => `
+      <a class="blog-card" href="#blog/${p.slug}">
+        <div class="blog-card-meta">${p.date}</div>
+        <div class="blog-card-title">${p.title}</div>
+        ${p.description ? `<div class="blog-card-desc">${p.description}</div>` : ''}
+      </a>`).join('');
+    main.innerHTML = `<div class="content-wrap page-top">
+      <h1>Blog</h1>
+      <div class="blog-list">${postsHTML || '<p style="color:var(--muted)">No posts yet.</p>'}</div>
+    </div>`;
+  } catch {
+    main.innerHTML = `<div class="content-wrap page-top">
+      <h1>Blog</h1>
+      <p style="color:var(--muted)">Could not load posts.</p>
+    </div>`;
+  }
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  document.getElementById('navLinks').classList.remove('open');
+}
+
+async function loadBlogPost(slug) {
+  setActiveBlogNav();
+  const main = document.getElementById('main');
+  try {
+    const res = await fetch(`content/blog/${slug}.md`);
+    if (!res.ok) throw new Error(res.statusText);
+    const md = await res.text();
+    main.innerHTML = `<div class="content-wrap page-top">
+      <a class="blog-back" href="#blog">← All posts</a>
+      ${marked.parse(md)}
+    </div>`;
+  } catch {
+    main.innerHTML = `<div class="content-wrap page-top">
+      <a class="blog-back" href="#blog">← All posts</a>
+      <p style="color:var(--muted)">Post not found.</p>
+    </div>`;
+  }
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  document.getElementById('navLinks').classList.remove('open');
+}
+
+const HERO = `
+<section class="hero">
+  <div class="hero-photo">
+    <img src="Sush-profile-pic.png" alt="Sushmetha A Mohan" />
+  </div>
+  <div class="hero-body">
+    <h1 class="hero-name">Sushmetha A Mohan</h1>
+    <p class="hero-role">Ph.D. &nbsp;·&nbsp; Neuroscientist &amp; Cancer Biologist</p>
+    <p class="hero-loc">📍 Germany </p>
+    <div class="hero-btns">
+      <a href="mailto:sushmetha94@gmail.com"
+         class="btn btn-outline">Email</a>
+      <a href="https://linkedin.com/in/sushmetha-a-mohan"
+         target="_blank" rel="noopener"
+         class="btn btn-outline">LinkedIn</a>
+      <a href="#cv" class="btn btn-filled">View CV</a>
+    </div>
+  </div>
+</section>`;
+
+async function loadPage(page) {
+  if (!(page in ROUTES)) page = 'about';
+
+  document.querySelectorAll('.nav-link').forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + page);
+  });
+
+  const main = document.getElementById('main');
+
+  try {
+    const res = await fetch(ROUTES[page]);
+    if (!res.ok) throw new Error(res.statusText);
+    const md = await res.text();
+    const html = marked.parse(md);
+
+    main.innerHTML = (page === 'about')
+      ? HERO + `<div class="content-wrap">${html}</div>`
+      : `<div class="content-wrap page-top">${html}</div>`;
+
+  } catch {
+    main.innerHTML = `<div class="content-wrap page-top">
+      <p style="color:var(--muted)">Content not yet available.</p>
+    </div>`;
+  }
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  document.getElementById('navLinks').classList.remove('open');
+}
+
+function route() {
+  const hash = (window.location.hash || '#about').replace('#', '');
+  if (hash === 'blog') {
+    loadBlogList();
+  } else if (hash.startsWith('blog/')) {
+    loadBlogPost(hash.slice(5));
+  } else {
+    loadPage(hash || 'about');
+  }
+}
+
+document.getElementById('menuBtn').addEventListener('click', () => {
+  document.getElementById('navLinks').classList.toggle('open');
+});
+
+window.addEventListener('hashchange', route);
+document.addEventListener('DOMContentLoaded', route);
