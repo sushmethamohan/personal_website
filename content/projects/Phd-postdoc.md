@@ -1,0 +1,14 @@
+<div class="hero-figure">
+  <img src="content/projects/images/phd-postdoc-image-website.png" alt="Schematic: NMD pathway and therapeutic strategy in SHH-medulloblastoma">
+  <h1>RNA Regulation in Pediatric Brain Tumors (PhD + Postdoc)</h1>
+</div>
+
+My PhD and postdoc focused on understanding the molecular mechanisms underlying brain tumor development. Within that broader interest, my work centered on nonsense-mediated mRNA decay (NMD), a conserved RNA quality-control pathway, and specifically whether it could also shape how a pediatric brain cancer initiates and progresses.
+
+I studied this question in the SHH subgroup of medulloblastoma, a cancer driven by excessive Sonic hedgehog signaling in cerebellar granule neuron progenitors. I used loss- and gain-of-function approaches, including siRNA, shRNA, CRISPR-Cas9 gene editing, and lentiviral transduction, alongside in vivo genetic mouse models, to disrupt NMD specifically in these progenitor cells, and paired these perturbations with functional assays to track the downstream cellular effects. I used molecular reporter assays to track how this affected Shh pathway activity, and genome-wide RNA sequencing to identify which transcripts were being regulated in this context. I also used a panel of RNA-focused assays, including RNA immunoprecipitation, mRNA stability assays, and NMD reporter assays, to directly probe how the pathway was acting on its target transcripts. I combined these approaches with molecular and cell biology techniques, including immunoblotting, immunohistochemistry, and cell culture assays, to validate what the sequencing pointed to.
+
+That work revealed a previously unrecognized role for NMD in this cancer's development, and raised a natural next question: could it be targeted therapeutically, and would that hold up in models more directly relevant to patients? That became the focus of my postdoc at the Montreal Clinical Research Institute (IRCM), where I used patient-derived medulloblastoma cell culture, mouse models, and patient-derived xenografts to design and validate an RNA-based therapeutic strategy aimed at this pathway.
+
+Publication is in progress. Feel free to reach out for more details.
+
+**Skills:** In vivo mouse genetic models (generation and phenotyping), in utero electroporation, transcardial perfusion, patient-derived brain tumor cell culture, patient-derived xenografts, Kaplan-Meier survival analysis and histopathological endpoint evaluation, RNA-based therapeutic design and validation, genome-wide RNA sequencing and transcriptomic data analysis, RNA-focused assays (RNA immunoprecipitation, mRNA stability assays, NMD reporter assays), molecular reporter assays, qRT-PCR, immunoblotting and immunohistochemistry, confocal and fluorescence microscopy (ImageJ, Imaris), hypothesis-driven independent project design, manuscript writing and revision, cross-disciplinary collaboration across RNA biology, cancer biology, and developmental signaling.

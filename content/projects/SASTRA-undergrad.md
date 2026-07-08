@@ -1,0 +1,11 @@
+# Nanostructure and Antimicrobial Surfaces (Undergrad Research at SASTRA)
+
+My first hands-on research experience was at SASTRA University's Centre for Advanced Research in Indian System of Medicine, on a project rooted in a traditional Indian practice that isn't widely known outside the region: for centuries, a specific tropical grass called Darbha (*Desmostachya bipinnata*) has been added to fermentable foods such as curd during solar and lunar eclipses, based on the belief that it prevents microbial spoilage. Our project investigated whether there was a scientific basis for this practice.
+
+To test whether this grass had a physical or phytochemical property that could explain its traditional use, we used scanning electron microscopy to compare its surface structure against six other tropical grasses. Darbha showed a distinctive hierarchical nano and microscale surface, with regularly spaced spikes and crevices beneath them, that none of the other grasses had. I then used microbial culture and CFU counting to test whether this surface structure actually affected bacterial survival in curd, and found that it trapped and removed bacteria, including lactobacilli, far more effectively than any of the other grasses tested. Our team also ran phytochemical screening across all the grasses to rule out that these effects came from differences in chemical composition rather than surface structure.
+
+The results reframed a centuries-old practice as a plausible piece of applied nanotechnology, and gave me my first bench-to-translational research experience, connecting surface characterization to a functional, testable hypothesis with real-world relevance. Beyond explaining the tradition itself, the findings pointed to a broader idea: that naturally occurring nanostructured surfaces like this one could inspire the design of biomimetic antibacterial surfaces for applications such as healthcare. The work was published in *BioNanoScience* in 2015.
+
+**Skills:** Scanning electron microscopy (sample preparation and imaging), phytochemical screening, microbial culture and CFU counting, comparative surface and antimicrobial analysis, scientific writing.
+
+![Schematic: Darbha grass surface structure and bacterial adhesion](content/projects/images/sastra-schematic.svg)

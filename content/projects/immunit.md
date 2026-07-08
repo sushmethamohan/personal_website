@@ -1,0 +1,11 @@
+# ImmuniT — Preclinical Immunotoxicity, CRO Science
+
+At ImmuniT, a contract research organization in Montreal, I worked in preclinical immunotoxicology, running GLP/GCLP-compliant in vitro studies on human blood and PBMCs for sponsor companies preparing IND submissions. I started as a Scientific Analyst and worked my way up to Study Director. Along the way, I collaborated closely with my team on sample processing, flow cytometry-based immune cell characterization, and Luminex multiplex cytokine profiling, while also leading the full study end to end as Study Director, authoring protocols, interpreting results, preparing study reports, and signing off on final reports submitted to sponsors for their regulatory filings.
+
+This role gave me a close-up view of how preclinical drug safety data actually gets generated and reviewed, grounded in rigor, reproducibility, and documentation rigorous enough to hold up to regulatory scrutiny before a drug moves toward human trials. It also strengthened a skill that's become central to how I work, turning dense experimental data into clear reports sponsors could rely on for their regulatory submissions.
+
+Working across multiple sponsor programs also gave me exposure to different stages of the IND-enabling package, from early immunotoxicity screening through to final safety reporting, and to see how those immunotoxicity results factored into decisions on whether a compound was ready to move into clinical trials. That end-to-end view of where preclinical safety fits into the broader drug discovery pipeline is something I bring directly into any drug discovery or development role I take on next.
+
+**Skills:** GLP/GCLP-compliant study design and execution, in vitro immunotoxicity assays (human blood/PBMCs), cell culture, FACS staining and flow cytometry, Luminex multiplex assay and analysis, systematic drug treatment protocols, protocol and report writing for regulatory submission, study leadership.
+
+![Schematic: Study Director at ImmuniT](content/projects/images/immunit-schematic.svg)

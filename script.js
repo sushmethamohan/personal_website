@@ -16,6 +16,18 @@ function setActiveBlogNav() {
   });
 }
 
+function setActiveResearchNav() {
+  document.querySelectorAll('.nav-link').forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#research');
+  });
+}
+
+function setActiveAboutNav() {
+  document.querySelectorAll('.nav-link').forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#about');
+  });
+}
+
 async function loadBlogList() {
   setActiveBlogNav();
   const main = document.getElementById('main');
@@ -58,6 +70,48 @@ async function loadBlogPost(slug) {
     main.innerHTML = `<div class="content-wrap page-top">
       <a class="blog-back" href="#blog">← All posts</a>
       <p style="color:var(--muted)">Post not found.</p>
+    </div>`;
+  }
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  document.getElementById('navLinks').classList.remove('open');
+}
+
+async function loadResearchProject(slug) {
+  setActiveResearchNav();
+  const main = document.getElementById('main');
+  try {
+    const res = await fetch(`content/projects/${slug}.md`);
+    if (!res.ok) throw new Error(res.statusText);
+    const md = await res.text();
+    main.innerHTML = `<div class="content-wrap page-top">
+      <a class="blog-back" href="#research">← All research</a>
+      ${marked.parse(md)}
+    </div>`;
+  } catch {
+    main.innerHTML = `<div class="content-wrap page-top">
+      <a class="blog-back" href="#research">← All research</a>
+      <p style="color:var(--muted)">Project not found.</p>
+    </div>`;
+  }
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  document.getElementById('navLinks').classList.remove('open');
+}
+
+async function loadAboutSubpage(slug) {
+  setActiveAboutNav();
+  const main = document.getElementById('main');
+  try {
+    const res = await fetch(`content/about/${slug}.md`);
+    if (!res.ok) throw new Error(res.statusText);
+    const md = await res.text();
+    main.innerHTML = `<div class="content-wrap page-top">
+      <a class="blog-back" href="#about">← About Me</a>
+      ${marked.parse(md)}
+    </div>`;
+  } catch {
+    main.innerHTML = `<div class="content-wrap page-top">
+      <a class="blog-back" href="#about">← About Me</a>
+      <p style="color:var(--muted)">Page not found.</p>
     </div>`;
   }
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -119,6 +173,10 @@ function route() {
     loadBlogList();
   } else if (hash.startsWith('blog/')) {
     loadBlogPost(hash.slice(5));
+  } else if (hash.startsWith('research/')) {
+    loadResearchProject(hash.slice(9));
+  } else if (hash.startsWith('about/')) {
+    loadAboutSubpage(hash.slice(6));
   } else {
     loadPage(hash || 'about');
   }

@@ -1,0 +1,11 @@
+# Supramolecular Nanoparticles for Immune Modulation (Harvard–MIT)
+
+During a research exchange at the Harvard-MIT Division of Health Sciences and Technology, I worked on understanding whether nanoparticle-based drug delivery could be used to reprogram the immune cells that let tumors escape immune surveillance, rather than kill tumor cells directly.
+
+Using an established nanoparticle synthesis platform already developed in the lab, I synthesized these cholesterol-conjugated drug nanoparticles, and used techniques such as dynamic light scattering to characterize their size, surface charge, and other properties before use in vitro and in vivo. To ask whether depleting regulatory T cells (Tregs) could enhance anti-tumor immunity, I tested one nanoparticle formulation designed to deplete this immunosuppressive population in a tumor model. To ask whether repolarizing tumor-associated macrophages away from an immunosuppressive state could achieve a similar effect, I tested a second nanoparticle formulation targeting this distinct immune cell population. I used flow cytometry and in vitro immune cell co-culture systems to measure how each nanoparticle affected these immune cell populations, and as a team, we extended this testing in vivo via subcutaneous injection in mouse tumor models.
+
+Across both formulations, the nanoparticle delivery consistently outperformed the free drug on the pharmacokinetic and immunological readouts we tracked, reinforcing the rationale for using a nanoparticle-based delivery strategy in the first place. It was my first real exposure to nanomedicine, and to thinking about cancer treatment through the immune system rather than direct cytotoxicity, a perspective that still shapes how I think about therapeutic design.
+
+**Skills:** Nanoparticle formulation and synthesis using established protocols, dynamic light scattering (size/zeta potential characterization), in vivo mouse tumor models (subcutaneous injection), flow cytometry, western blotting, cell viability assays, in vitro immune cell co-culture systems.
+
+![Schematic: Immune-modulating nanoparticle strategy](content/projects/images/harvard-schematic.svg)
