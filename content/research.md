@@ -5,5 +5,3 @@ Deeper dives into specific projects, each with a full write-up and schematic.
 - [Molecular Mechanisms of Brain Tumorigenesis](#research/brain-tumorigenesis)
 - [Supramolecular Nanoparticles for Immune Modulation (Harvard–MIT)](#research/harvard-sap)
 - [Nanostructure and Antimicrobial Surfaces — Undergrad Research at SASTRA](#research/sastra-undergrad)
-- [RNA Regulation in Pediatric Brain Tumors (PhD + Postdoc)](#research/phd-postdoc)
-- [OSMR Signaling in Glioblastoma and Neural Stem Cells (PhD Rotation)](#research/glioblastoma-rotation)
