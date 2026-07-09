@@ -1,5 +1,5 @@
 # Research
-Deeper dives into specific projects, each with a full write-up and schematic.
+Deeper dives into specific projects
 
 - [ImmuniT — Preclinical Immunotoxicity, CRO Science](#research/immunit)
 - [Molecular Mechanisms of Brain Tumorigenesis](#research/brain-tumorigenesis)
