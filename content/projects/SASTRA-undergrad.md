@@ -7,5 +7,3 @@ To test whether this grass had a physical or phytochemical property that could e
 The results reframed a centuries-old practice as a plausible piece of applied nanotechnology, and gave me my first bench-to-translational research experience, connecting surface characterization to a functional, testable hypothesis with real-world relevance. Beyond explaining the tradition itself, the findings pointed to a broader idea: that naturally occurring nanostructured surfaces like this one could inspire the design of biomimetic antibacterial surfaces for applications such as healthcare. The work was published in *BioNanoScience* in 2015.
 
 **Skills:** Scanning electron microscopy (sample preparation and imaging), phytochemical screening, microbial culture and CFU counting, comparative surface and antimicrobial analysis, scientific writing.
-
-![Schematic: Darbha grass surface structure and bacterial adhesion](content/projects/images/sastra-schematic.svg)

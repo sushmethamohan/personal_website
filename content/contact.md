@@ -1,6 +1,6 @@
 # Contact
 
-I would love to connect — whether you have a research opportunity, a collaboration idea, or simply want to talk science.
+I would love to connect, whether you have a research opportunity, a collaboration idea, or simply want to talk science.
 
 ---
 
@@ -9,8 +9,6 @@ I would love to connect — whether you have a research opportunity, a collabora
 **Email:** [sushmetha94@gmail.com](mailto:sushmetha94@gmail.com)
 
 **LinkedIn:** [linkedin.com/in/sushmetha-a-mohan](https://www.linkedin.com/in/sushmetha-a-mohan/)
-
-**Phone:** +49 1708803568
 
 **Location:** Metzingen, Germany
 

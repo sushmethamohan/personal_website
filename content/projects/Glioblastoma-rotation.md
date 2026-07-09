@@ -9,5 +9,3 @@ To ask whether this same pathway affects normal neural stem cells and not just t
 Knocking down OSMR impaired tumor growth in vivo, supporting it as a viable therapeutic target in glioblastoma. This was a dense, technique-heavy rotation, mouse xenograft work, an inducible gene-editing system, and primary stem cell culture all at once, and it's where I first got comfortable with in vivo cancer models before starting my thesis work at McGill. I'm a co-author on a related commentary from this work, *"Targeting OSMR in glioma stem cells,"* published in *Oncotarget* in 2017 (DOI: 10.18632/oncotarget.15066).
 
 **Skills:** In vivo subcutaneous xenograft models, CRISPRi-dCas9 inducible knockdown systems, RT-qPCR, neurosphere assay and primary neural stem cell culture, limiting dilution/sphere formation assays, electroporation, immunoblotting, immunofluorescence, cell viability/proliferation assays, flow cytometry/FACS, hypothesis-driven independent project design.
-
-![Schematic: OSMR signaling in BTSC and adult neural stem cells](content/projects/images/glioblastoma-schematic.svg)

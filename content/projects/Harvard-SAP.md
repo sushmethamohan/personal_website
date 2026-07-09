@@ -7,5 +7,3 @@ Using an established nanoparticle synthesis platform already developed in the la
 Across both formulations, the nanoparticle delivery consistently outperformed the free drug on the pharmacokinetic and immunological readouts we tracked, reinforcing the rationale for using a nanoparticle-based delivery strategy in the first place. It was my first real exposure to nanomedicine, and to thinking about cancer treatment through the immune system rather than direct cytotoxicity, a perspective that still shapes how I think about therapeutic design.
 
 **Skills:** Nanoparticle formulation and synthesis using established protocols, dynamic light scattering (size/zeta potential characterization), in vivo mouse tumor models (subcutaneous injection), flow cytometry, western blotting, cell viability assays, in vitro immune cell co-culture systems.
-
-![Schematic: Immune-modulating nanoparticle strategy](content/projects/images/harvard-schematic.svg)

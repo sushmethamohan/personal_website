@@ -10,12 +10,6 @@ const ROUTES = {
   contact:      'content/contact.md',
 };
 
-function setActiveBlogNav() {
-  document.querySelectorAll('.nav-link').forEach(a => {
-    a.classList.toggle('active', a.getAttribute('href') === '#blog');
-  });
-}
-
 function setActiveResearchNav() {
   document.querySelectorAll('.nav-link').forEach(a => {
     a.classList.toggle('active', a.getAttribute('href') === '#research');
@@ -26,54 +20,6 @@ function setActiveAboutNav() {
   document.querySelectorAll('.nav-link').forEach(a => {
     a.classList.toggle('active', a.getAttribute('href') === '#about');
   });
-}
-
-async function loadBlogList() {
-  setActiveBlogNav();
-  const main = document.getElementById('main');
-  try {
-    const res = await fetch('content/blog/index.json');
-    if (!res.ok) throw new Error(res.statusText);
-    const data = await res.json();
-    const postsHTML = data.posts.map(p => `
-      <a class="blog-card" href="#blog/${p.slug}">
-        <div class="blog-card-meta">${p.date}</div>
-        <div class="blog-card-title">${p.title}</div>
-        ${p.description ? `<div class="blog-card-desc">${p.description}</div>` : ''}
-      </a>`).join('');
-    main.innerHTML = `<div class="content-wrap page-top">
-      <h1>Blog</h1>
-      <div class="blog-list">${postsHTML || '<p style="color:var(--muted)">No posts yet.</p>'}</div>
-    </div>`;
-  } catch {
-    main.innerHTML = `<div class="content-wrap page-top">
-      <h1>Blog</h1>
-      <p style="color:var(--muted)">Could not load posts.</p>
-    </div>`;
-  }
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-  document.getElementById('navLinks').classList.remove('open');
-}
-
-async function loadBlogPost(slug) {
-  setActiveBlogNav();
-  const main = document.getElementById('main');
-  try {
-    const res = await fetch(`content/blog/${slug}.md`);
-    if (!res.ok) throw new Error(res.statusText);
-    const md = await res.text();
-    main.innerHTML = `<div class="content-wrap page-top">
-      <a class="blog-back" href="#blog">← All posts</a>
-      ${marked.parse(md)}
-    </div>`;
-  } catch {
-    main.innerHTML = `<div class="content-wrap page-top">
-      <a class="blog-back" href="#blog">← All posts</a>
-      <p style="color:var(--muted)">Post not found.</p>
-    </div>`;
-  }
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-  document.getElementById('navLinks').classList.remove('open');
 }
 
 async function loadResearchProject(slug) {
@@ -169,11 +115,7 @@ async function loadPage(page) {
 
 function route() {
   const hash = (window.location.hash || '#about').replace('#', '');
-  if (hash === 'blog') {
-    loadBlogList();
-  } else if (hash.startsWith('blog/')) {
-    loadBlogPost(hash.slice(5));
-  } else if (hash.startsWith('research/')) {
+  if (hash.startsWith('research/')) {
     loadResearchProject(hash.slice(9));
   } else if (hash.startsWith('about/')) {
     loadAboutSubpage(hash.slice(6));
