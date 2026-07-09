@@ -1,8 +1,3 @@
-<div class="hero-figure">
-  <img src="content/projects/images/glioblastoma-schematic.svg" alt="Schematic: NMD pathway and therapeutic strategy in SHH-medulloblastoma">
-  <h1>RNA Regulation in Pediatric Brain Tumors (PhD + Postdoc)</h1>
-</div>
-
 # OSMR Signaling in Glioblastoma and Neural Stem Cells (PhD Rotation)
 
 During a PhD rotation, I worked on understanding how a specific cytokine receptor signaling pathway drives glioblastoma, and whether that same pathway also shapes the behavior of the neural stem cells thought to give rise to these tumors. The lab had previously shown that OSMR (Oncostatin M receptor) partners with the EGFRvIII/STAT3 oncogenic pathway to drive the survival and growth of Brain Tumor Stem Cells (BTSC). My part of the rotation extended this question in two directions, one in established tumors and one in the normal stem cells that may precede them.

@@ -26,7 +26,7 @@ async function loadResearchProject(slug) {
   setActiveResearchNav();
   const main = document.getElementById('main');
   try {
-    const res = await fetch(`content/projects/${slug}.md`);
+    const res = await fetch(`content/projects/${slug.toLowerCase()}.md`);
     if (!res.ok) throw new Error(res.statusText);
     const md = await res.text();
     main.innerHTML = `<div class="content-wrap page-top">
@@ -47,7 +47,7 @@ async function loadAboutSubpage(slug) {
   setActiveAboutNav();
   const main = document.getElementById('main');
   try {
-    const res = await fetch(`content/about/${slug}.md`);
+    const res = await fetch(`content/about/${slug.toLowerCase()}.md`);
     if (!res.ok) throw new Error(res.statusText);
     const md = await res.text();
     main.innerHTML = `<div class="content-wrap page-top">
